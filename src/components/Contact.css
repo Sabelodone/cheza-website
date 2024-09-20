@@ -1,0 +1,111 @@
+/* Contact Section */
+#contact {
+    padding: 2rem 0;
+    background-color: white; /* Light grey background */
+  }
+  
+  #contact h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #contact .custom-button {
+    margin-top: 1rem;
+    border-radius: 25px; /* Rounded corners for a modern look */
+    border: none;
+    color: #fff;
+    background-color: #6c63ff; /* Initial button color */
+    animation: colorChange 3s infinite; /* Apply the color change animation */
+  }
+  
+  #contact .custom-button:hover {
+    background-color: #5a54e1; /* Slightly darker shade for hover effect */
+  }
+  
+  #contact form {
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  /* Modal Custom Styles */
+  .modal-content {
+    border-radius: 10px; /* Rounded corners for the modal */
+  }
+  
+  .modal-header, .modal-body, .modal-footer {
+    padding: 1.5rem;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .modal-footer .btn {
+    border-radius: 25px; /* Rounded corners for the modal buttons */
+    background-color: #6c63ff; /* Replace with your app color */
+    border: none;
+    color: #fff;
+  }
+  
+  .modal-footer .btn:hover {
+    background-color: #5a54e1; /* Slightly darker shade for hover effect */
+  }
+  
+  /* Bounce Animation for Scroll */
+  .bounceIn {
+    animation: bounceIn 1s;
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.3);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Color Change Animation */
+  @keyframes colorChange {
+    0% {
+      background-color: #6c63ff; /* Initial color */
+    }
+    25% {
+      background-color: #ff6b6b; /* Change to red */
+    }
+    50% {
+      background-color: #f1c40f; /* Change to yellow */
+    }
+    75% {
+      background-color: #2ecc71; /* Change to green */
+    }
+    100% {
+      background-color: #6c63ff; /* Back to initial color */
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    #contact h2 {
+      font-size: 1.5rem;
+    }
+  
+    #contact .custom-button {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,121 @@
+.landing-page {
+  position: relative;
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  text-align: center; /* Center text horizontally */
+  font-weight: bold;
+  min-height: 100vh; /* Ensure it covers the viewport height */
+  overflow: hidden; /* Prevent overflow issues */
+  background-image: url('/public/pexels-adilgkkya-2668314.jpg'); /* Add your background image path */
+  background-size: cover; /* Ensure the image covers the div */
+  background-position: center; /* Center the background image */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  rgba(128, 0, 128, 0.403); /* Semi-transparent overlay */
+  z-index: 0; /* Above background but behind text */
+}
+
+.landing-page .landing-text {
+  position: relative;
+  z-index: 1; /* Ensure text is above overlay */
+  padding: 1rem; /* Add padding for small screens */
+  max-width: 90%; /* Prevent text from extending too wide */
+}
+
+.landing-page .landing-text h1 {
+  font-size: 4rem; /* Adjust font size for large screens */
+  color:  black; /* Text color */
+  margin-bottom: 1rem;
+}
+
+.landing-page .landing-text p {
+  font-size: 1.5rem; /* Adjust font size for readability */
+  color: black; /* Text color */
+  margin-bottom: 2rem;
+}
+
+.landing-page .button-group {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically on smaller screens */
+  align-items: center; /* Center buttons horizontally */
+  gap: 1rem; /* Space between buttons */
+}
+
+
+/* Styles for the sponsor carousel */
+.sponsor-carousel {
+  max-width: 80%; /* Adjust width as needed */
+  margin: 0 auto; /* Center the carousel */
+}
+
+.sponsor-img {
+  max-height: 100px; /* Limit image height */
+  object-fit: contain; /* Ensure images scale properly */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sponsor-img {
+    max-height: 80px; /* Adjust image height for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .sponsor-img {
+    max-height: 60px; /* Further adjustment for extra-small screens */
+  }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .landing-page .landing-text h1 {
+    font-size: 2rem; /* Adjust for medium screens */
+  }
+
+  .landing-page .landing-text p {
+    font-size: 1rem; /* Adjust for medium screens */
+  }
+
+  .custom-button {
+    font-size: 1rem; /* Adjust button font size for medium screens */
+    padding: 0.5rem 1rem; /* Adjust button padding for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-page .landing-text h1 {
+    font-size: 1.5rem; /* Adjust for smaller screens */
+  }
+
+  .landing-page .landing-text p {
+    font-size: 0.9rem; /* Adjust for smaller screens */
+  }
+
+  .custom-button {
+    font-size: 0.9rem; /* Adjust button font size for smaller screens */
+    padding: 0.5rem 1rem; /* Adjust button padding for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .landing-page .landing-text h1 {
+    font-size: 1.25rem; /* Adjust for extra-small screens */
+  }
+
+  .landing-page .landing-text p {
+    font-size: 0.8rem; /* Adjust for extra-small screens */
+  }
+
+  .custom-button {
+    font-size: 0.8rem; /* Adjust button font size for extra-small screens */
+    padding: 0.5rem 0.75rem; /* Adjust button padding for extra-small screens */
+  }
+}

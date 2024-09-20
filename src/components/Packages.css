@@ -1,0 +1,97 @@
+/* Packages.css */
+.packages-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.package-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(240, 234, 214, 0.7);
+  position: relative; /* Ensure positioning context for the image effect */
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.package-image {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  border-bottom: 3px solid #6c1d8f;
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transition for pop-out effect */
+}
+
+.package-card:hover .package-image {
+  transform: scale(1.1); /* Pop-out effect on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow to enhance the pop-out effect */
+}
+
+.package-details,
+.package-accommodation,
+.package-price {
+  margin-bottom: 10px;
+}
+
+.package-price {
+  font-weight: bold;
+  color: #6c1d8f;
+  font-size: 1.2rem;
+}
+
+.package-images {
+  display: flex;
+  overflow-x: auto;
+  gap: 8px;
+  margin-top: 15px;
+  padding-bottom: 10px; /* Add padding to avoid content cut-off */
+}
+
+.package-images img {
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.package-images img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Mobile-specific styles */
+@media (max-width: 576px) {
+  .packages-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .package-image {
+    height: 150px;
+  }
+
+  .package-images img {
+    max-height: 80px;
+  }
+
+  .package-images img:active {
+    transform: scale(1.5); /* Zoom in on touch */
+    transition: transform 0.5s ease-in-out;
+  }
+}
+
+/* Additional breakpoints */
+@media (max-width: 768px) {
+  .packages-heading {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+}

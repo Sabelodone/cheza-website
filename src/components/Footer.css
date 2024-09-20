@@ -1,0 +1,62 @@
+/* General Footer Styles */
+footer.footer {
+  background-color: #f0ead6 !important; /* Eggshell background */
+  color: #6c1d8f !important; /* Light purple text color */
+  padding: 40px 20px;
+  position: relative;
+}
+
+footer.footer h5 {
+  margin-bottom: 20px;
+  color: #4a0d6b !important; /* Darker purple for headings */
+}
+
+footer.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+footer.footer ul li {
+  margin-bottom: 10px;
+}
+
+footer.footer ul li a {
+  color: #6c1d8f !important; /* Light purple for links */
+  text-decoration: none;
+}
+
+footer.footer ul li a:hover {
+  color: #a64d79 !important; /* Medium purple on hover */
+}
+
+/* Logo Overlay Styles */
+.logo-overlay-wrapper {
+  position: absolute;
+  bottom: 20px; /* Keep the logo at the bottom */
+  left: 20px; /* Keep the logo at the left */
+  display: inline-block;
+  width: 100px; /* Same width as the logo */
+  height: auto;
+}
+
+.footer-logo {
+  width: 100%; /* Adjust size as needed */
+  height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .logo-overlay-wrapper {
+    width: 80px; /* Resize wrapper for small screens */
+  }
+
+  .footer-logo {
+    width: 100%; /* Ensure the logo fills the wrapper */
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-overlay-wrapper {
+    width: 60px; /* Further resize the wrapper for very small screens */
+  }
+}

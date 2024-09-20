@@ -1,0 +1,61 @@
+/* General page styling */
+.about-page {
+  font-family: 'Arial', sans-serif;
+  background-color: rgba(128, 0, 128, 0.403); /* Set the background color */
+  padding: 0; /* Ensure no extra padding affects layout */
+  margin: 0; /* Remove default margin */
+}
+
+/* About info section styling */
+.about-info {
+  margin-top: 40px; /* Increased spacing above the info section */
+}
+
+.about-info h2 {
+  font-size: 2.5rem; /* Larger font size for headings */
+  font-weight: bolder; /* Bolder heading text */
+  margin-bottom: 20px;
+  color: black white; /* Set heading color to white */
+}
+
+.about-info p {
+  font-size: 1.25rem; /* Larger text for readability */
+  line-height: 1.8;
+  color: black; /* Set paragraph color to whitesmoke */
+}
+
+/* Image styling */
+.about-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px; /* Increased spacing between sections */
+}
+
+/* Responsive image styling */
+.responsive-img {
+  width: 50%;
+  height: 70%;
+  border-radius: 5px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .about-info h2 {
+    font-size: 2rem; /* Adjusted font size */
+  }
+
+  .about-info p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-info h2 {
+    font-size: 1.5rem; /* Smaller font size */
+  }
+
+  .about-info p {
+    font-size: 1rem;
+  }
+}
